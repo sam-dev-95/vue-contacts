@@ -1,28 +1,43 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
     <PhoneBook msg="Phone Book Example" />
   </div>
 </template>
 
 <script>
-import PhoneBook from './components/PhoneBook.vue'
+import PhoneBook from "./components/PhoneBook.vue";
 
 export default {
-  name: 'App',
+  name: "App",
   components: {
-    PhoneBook
-  }
-}
+    PhoneBook,
+  },
+};
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
+* {
+  margin: 0;
+  padding: 0;
 }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /*1rem = 10px*/
+}
+
+
+
+body{
+  font-family: Avenir, Helvetica, Arial, sans-serif;
+  padding: 2rem 1rem;
+}
+
+
 </style>
